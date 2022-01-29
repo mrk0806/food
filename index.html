@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now....</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">yummy.eats</a>
+            </header>
+            <h1><span> The Healty</span> Eating Experience</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere distinctio voluptatem eius perspiciatis expedita repellat earum inventore ad ut!
+            </p>
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+
+                        <label for="city">Enter your city :</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example : "San Diego"</p>
+                    </div>
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+    </div>
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae obcaecati impedit, dolor pariatur minima voluptatum ipsam tempore deleniti laboriosam, quaerat quo qui culpa odit mollitia animi sequi, doloribus et fugiat.</p>
+
+        </div>
+        <img src="img/food.jpg" alt="Pictuore of Food in a bowl">
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animation-overlay');
+        })
+    </script>
+</body>
+
+</html>
